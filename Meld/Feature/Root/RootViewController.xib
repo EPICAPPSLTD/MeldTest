@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RootViewController" customModule="Meld" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="zkY-K7-2Du" id="vkz-eK-sWd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="zkY-K7-2Du" customClass="RootView" customModule="Meld" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="YMW-70-rCP">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sQm-hs-A2j" customClass="CircleView" customModule="Meld" customModuleProvider="target">
+                    <rect key="frame" x="171.66666666666666" y="738" width="50" height="50"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4Te-ct-GMP">
+                            <rect key="frame" x="0.0" y="2.3333333333333321" width="50" height="45.666666666666671"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <imageReference key="image" image="line.3.horizontal" catalog="system" symbolScale="large"/>
+                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="semibold"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="sQm-hs-A2j" secondAttribute="height" multiplier="1:1" id="1LZ-vB-yja"/>
+                        <constraint firstAttribute="trailing" secondItem="4Te-ct-GMP" secondAttribute="trailing" id="LhV-07-9MO"/>
+                        <constraint firstAttribute="width" constant="50" id="PmL-eY-100"/>
+                        <constraint firstItem="4Te-ct-GMP" firstAttribute="top" secondItem="sQm-hs-A2j" secondAttribute="top" id="TBv-2k-4d3"/>
+                        <constraint firstAttribute="bottom" secondItem="4Te-ct-GMP" secondAttribute="bottom" id="esb-ap-saF"/>
+                        <constraint firstItem="4Te-ct-GMP" firstAttribute="leading" secondItem="sQm-hs-A2j" secondAttribute="leading" id="pZe-5f-wri"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="imageView" destination="4Te-ct-GMP" id="3eS-oF-6UZ"/>
+                        <outletCollection property="gestureRecognizers" destination="8eE-9e-crC" appends="YES" id="gN3-1h-nOt"/>
+                        <outletCollection property="gestureRecognizers" destination="JTm-q7-gYd" appends="YES" id="a6j-PF-YcQ"/>
+                        <outletCollection property="gestureRecognizers" destination="kt8-R1-kZS" appends="YES" id="LkG-jX-m8h"/>
+                    </connections>
+                </view>
+                <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nza-9H-eDA">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </containerView>
+                <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eb0-vd-xln">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </containerView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="eYH-VV-jfJ"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="sQm-hs-A2j" firstAttribute="centerX" secondItem="eYH-VV-jfJ" secondAttribute="centerX" id="2v0-hO-PM9"/>
+                <constraint firstAttribute="bottom" secondItem="eb0-vd-xln" secondAttribute="bottom" id="99g-ZF-HKx"/>
+                <constraint firstItem="eb0-vd-xln" firstAttribute="leading" secondItem="zkY-K7-2Du" secondAttribute="leading" id="GEy-Rk-27F"/>
+                <constraint firstItem="Nza-9H-eDA" firstAttribute="leading" secondItem="zkY-K7-2Du" secondAttribute="leading" id="M55-17-GeW"/>
+                <constraint firstItem="eb0-vd-xln" firstAttribute="top" secondItem="zkY-K7-2Du" secondAttribute="top" id="OgB-lx-wyu"/>
+                <constraint firstAttribute="bottom" secondItem="Nza-9H-eDA" secondAttribute="bottom" id="Utj-4T-J2f"/>
+                <constraint firstAttribute="trailing" secondItem="eb0-vd-xln" secondAttribute="trailing" id="Vt8-vX-eqh"/>
+                <constraint firstItem="Nza-9H-eDA" firstAttribute="top" secondItem="zkY-K7-2Du" secondAttribute="top" id="XY5-Sp-cxS"/>
+                <constraint firstItem="YMW-70-rCP" firstAttribute="top" secondItem="zkY-K7-2Du" secondAttribute="top" id="ewk-5n-udo"/>
+                <constraint firstItem="YMW-70-rCP" firstAttribute="leading" secondItem="zkY-K7-2Du" secondAttribute="leading" id="h7l-eE-UC9"/>
+                <constraint firstAttribute="bottom" secondItem="YMW-70-rCP" secondAttribute="bottom" id="hzG-2R-9go"/>
+                <constraint firstAttribute="trailing" secondItem="Nza-9H-eDA" secondAttribute="trailing" id="lyH-31-8Ei"/>
+                <constraint firstItem="eYH-VV-jfJ" firstAttribute="bottom" secondItem="sQm-hs-A2j" secondAttribute="bottom" constant="30" id="mmT-vP-Od4"/>
+                <constraint firstAttribute="trailing" secondItem="YMW-70-rCP" secondAttribute="trailing" id="y4A-fk-ODb"/>
+            </constraints>
+            <connections>
+                <outlet property="interactiveOverlay" destination="eb0-vd-xln" id="D5m-JH-GQs"/>
+                <outlet property="menuButton" destination="sQm-hs-A2j" id="aN4-HT-Uf1"/>
+                <outlet property="normalOverlay" destination="Nza-9H-eDA" id="vv4-lL-3YB"/>
+            </connections>
+            <point key="canvasLocation" x="-105" y="-605"/>
+        </view>
+        <tapGestureRecognizer id="8eE-9e-crC">
+            <connections>
+                <action selector="menuTap" destination="-1" id="Gw7-Zg-dNx"/>
+            </connections>
+        </tapGestureRecognizer>
+        <panGestureRecognizer minimumNumberOfTouches="1" id="JTm-q7-gYd">
+            <connections>
+                <action selector="menuWithPan:" destination="-1" id="7PG-AY-kKb"/>
+            </connections>
+        </panGestureRecognizer>
+        <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="kt8-R1-kZS">
+            <connections>
+                <action selector="menuWithLongPress:" destination="-1" id="Rff-KH-n5j"/>
+            </connections>
+        </pongPressGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="background" width="886" height="1920"/>
+        <image name="line.3.horizontal" catalog="system" width="128" height="65"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

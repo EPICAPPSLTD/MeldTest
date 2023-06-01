@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OverlayViewController" customModule="Meld" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="VCH-CK-93F" id="Qdt-94-qTP"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="VCH-CK-93F" customClass="OverlayView" customModule="Meld" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Loj-Wu-bNM">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Luv-2f-dve">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <blurEffect style="regular"/>
+                </visualEffectView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DjD-5q-LPJ" customClass="CircleButton" customModule="Meld" customModuleProvider="target">
+                    <rect key="frame" x="171.66666666666666" y="738" width="50" height="50"/>
+                    <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="DjD-5q-LPJ" secondAttribute="height" multiplier="1:1" id="WlA-F8-IQR"/>
+                        <constraint firstAttribute="width" constant="50" id="bwh-qI-EWP"/>
+                    </constraints>
+                    <state key="normal" title="CircleButton"/>
+                    <buttonConfiguration key="configuration" style="plain">
+                        <imageReference key="image" image="xmark" catalog="system" symbolScale="medium"/>
+                        <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" weight="semibold"/>
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="closeTapped" destination="-1" eventType="touchUpInside" id="yST-gj-pTM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dwz-F5-YW0" userLabel="CircleButton1" customClass="CircleButton" customModule="Meld" customModuleProvider="target">
+                    <rect key="frame" x="171.66666666666666" y="738" width="50" height="50"/>
+                    <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="jx5-My-lhq"/>
+                    </constraints>
+                    <state key="normal" title="CircleButton"/>
+                    <buttonConfiguration key="configuration" style="plain">
+                        <imageReference key="image" image="xmark" catalog="system" symbolScale="medium"/>
+                        <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" weight="semibold"/>
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="featureTappedWithButton:" destination="-1" eventType="touchUpInside" id="JJi-G3-zoT"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L29-Gt-zxX" userLabel="CircleButton2" customClass="CircleButton" customModule="Meld" customModuleProvider="target">
+                    <rect key="frame" x="171.66666666666666" y="738" width="50" height="50"/>
+                    <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="u7C-fz-TUi"/>
+                    </constraints>
+                    <state key="normal" title="CircleButton"/>
+                    <buttonConfiguration key="configuration" style="plain">
+                        <imageReference key="image" image="xmark" catalog="system" symbolScale="medium"/>
+                        <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" weight="semibold"/>
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="featureTappedWithButton:" destination="-1" eventType="touchUpInside" id="ZET-rl-RQu"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7OB-46-YDV" userLabel="CircleButton3" customClass="CircleButton" customModule="Meld" customModuleProvider="target">
+                    <rect key="frame" x="171.66666666666666" y="738" width="50" height="50"/>
+                    <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="KaI-Bh-kuZ"/>
+                    </constraints>
+                    <state key="normal" title="CircleButton"/>
+                    <buttonConfiguration key="configuration" style="plain">
+                        <imageReference key="image" image="xmark" catalog="system" symbolScale="medium"/>
+                        <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" weight="semibold"/>
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="featureTappedWithButton:" destination="-1" eventType="touchUpInside" id="85q-8g-1IR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZeG-nT-hrc" userLabel="CircleButton4" customClass="CircleButton" customModule="Meld" customModuleProvider="target">
+                    <rect key="frame" x="171.66666666666666" y="738" width="50" height="50"/>
+                    <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="JhS-wz-1AP"/>
+                    </constraints>
+                    <state key="normal" title="CircleButton"/>
+                    <buttonConfiguration key="configuration" style="plain">
+                        <imageReference key="image" image="xmark" catalog="system" symbolScale="medium"/>
+                        <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" weight="semibold"/>
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="featureTappedWithButton:" destination="-1" eventType="touchUpInside" id="zSa-Ui-Fyt"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4VM-nY-tnS" userLabel="CircleButton5" customClass="CircleButton" customModule="Meld" customModuleProvider="target">
+                    <rect key="frame" x="171.66666666666666" y="738" width="50" height="50"/>
+                    <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="8WQ-mF-iVJ"/>
+                    </constraints>
+                    <state key="normal" title="CircleButton"/>
+                    <buttonConfiguration key="configuration" style="plain">
+                        <imageReference key="image" image="xmark" catalog="system" symbolScale="medium"/>
+                        <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" weight="semibold"/>
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="featureTappedWithButton:" destination="-1" eventType="touchUpInside" id="XKc-9A-nEb"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OHw-xO-CUN" userLabel="Label1">
+                    <rect key="frame" x="175.33333333333334" y="753.33333333333337" width="42.333333333333343" height="19.333333333333371"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aFa-pk-eqA" userLabel="Label2">
+                    <rect key="frame" x="175.33333333333334" y="753.33333333333337" width="42.333333333333343" height="19.333333333333371"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hl0-30-80F" userLabel="Label3">
+                    <rect key="frame" x="175.33333333333334" y="753.33333333333337" width="42.333333333333343" height="19.333333333333371"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEK-Lg-cg5" userLabel="Label4">
+                    <rect key="frame" x="175.33333333333334" y="753.33333333333337" width="42.333333333333343" height="19.333333333333371"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dju-BK-ViY" userLabel="Label5">
+                    <rect key="frame" x="175.33333333333334" y="753.33333333333337" width="42.333333333333343" height="19.333333333333371"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="wYd-bk-wXA"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="aFa-pk-eqA" firstAttribute="centerY" secondItem="DjD-5q-LPJ" secondAttribute="centerY" id="1e4-hP-iEx"/>
+                <constraint firstItem="4VM-nY-tnS" firstAttribute="centerX" secondItem="DjD-5q-LPJ" secondAttribute="centerX" id="23e-jI-x9v"/>
+                <constraint firstItem="ZeG-nT-hrc" firstAttribute="centerY" secondItem="DjD-5q-LPJ" secondAttribute="centerY" id="2Ll-co-R3q"/>
+                <constraint firstItem="4VM-nY-tnS" firstAttribute="width" secondItem="4VM-nY-tnS" secondAttribute="height" multiplier="1:1" id="AMb-xx-rVx"/>
+                <constraint firstItem="DjD-5q-LPJ" firstAttribute="centerX" secondItem="wYd-bk-wXA" secondAttribute="centerX" id="Ah8-wZ-boD"/>
+                <constraint firstItem="zEK-Lg-cg5" firstAttribute="centerX" secondItem="DjD-5q-LPJ" secondAttribute="centerX" id="BLZ-t3-RzR"/>
+                <constraint firstItem="7OB-46-YDV" firstAttribute="centerX" secondItem="DjD-5q-LPJ" secondAttribute="centerX" id="E1p-2r-YYe"/>
+                <constraint firstItem="Hl0-30-80F" firstAttribute="centerY" secondItem="DjD-5q-LPJ" secondAttribute="centerY" id="Izd-Yf-JMK"/>
+                <constraint firstAttribute="trailing" secondItem="Loj-Wu-bNM" secondAttribute="trailing" id="OAO-GG-GAZ"/>
+                <constraint firstItem="Loj-Wu-bNM" firstAttribute="leading" secondItem="VCH-CK-93F" secondAttribute="leading" id="VKz-py-Sr6"/>
+                <constraint firstItem="OHw-xO-CUN" firstAttribute="centerY" secondItem="DjD-5q-LPJ" secondAttribute="centerY" id="WvU-9W-SRB"/>
+                <constraint firstItem="Dwz-F5-YW0" firstAttribute="centerX" secondItem="DjD-5q-LPJ" secondAttribute="centerX" id="WyS-Wl-s7r"/>
+                <constraint firstItem="ZeG-nT-hrc" firstAttribute="width" secondItem="ZeG-nT-hrc" secondAttribute="height" multiplier="1:1" id="ZmF-RD-Kxm"/>
+                <constraint firstItem="Loj-Wu-bNM" firstAttribute="top" secondItem="VCH-CK-93F" secondAttribute="top" id="bHU-uw-k0o"/>
+                <constraint firstItem="Dwz-F5-YW0" firstAttribute="centerY" secondItem="DjD-5q-LPJ" secondAttribute="centerY" id="bNd-Vp-Qlj"/>
+                <constraint firstItem="7OB-46-YDV" firstAttribute="width" secondItem="7OB-46-YDV" secondAttribute="height" multiplier="1:1" id="bZK-TN-KOd"/>
+                <constraint firstItem="L29-Gt-zxX" firstAttribute="width" secondItem="L29-Gt-zxX" secondAttribute="height" multiplier="1:1" id="cZ0-h9-NuK"/>
+                <constraint firstItem="L29-Gt-zxX" firstAttribute="centerX" secondItem="DjD-5q-LPJ" secondAttribute="centerX" id="dix-U2-XGW"/>
+                <constraint firstItem="dju-BK-ViY" firstAttribute="centerY" secondItem="DjD-5q-LPJ" secondAttribute="centerY" id="eT7-bM-3Zi"/>
+                <constraint firstItem="Hl0-30-80F" firstAttribute="centerX" secondItem="DjD-5q-LPJ" secondAttribute="centerX" id="f7q-z0-gah"/>
+                <constraint firstItem="7OB-46-YDV" firstAttribute="centerY" secondItem="DjD-5q-LPJ" secondAttribute="centerY" id="hAX-mC-4Oc"/>
+                <constraint firstAttribute="bottom" secondItem="Loj-Wu-bNM" secondAttribute="bottom" id="lPY-Cr-XCh"/>
+                <constraint firstItem="ZeG-nT-hrc" firstAttribute="centerX" secondItem="DjD-5q-LPJ" secondAttribute="centerX" id="mQH-e2-yb3"/>
+                <constraint firstItem="4VM-nY-tnS" firstAttribute="centerY" secondItem="DjD-5q-LPJ" secondAttribute="centerY" id="qiw-VU-w1D"/>
+                <constraint firstItem="zEK-Lg-cg5" firstAttribute="centerY" secondItem="DjD-5q-LPJ" secondAttribute="centerY" id="sfq-zO-MSB"/>
+                <constraint firstItem="Dwz-F5-YW0" firstAttribute="width" secondItem="Dwz-F5-YW0" secondAttribute="height" multiplier="1:1" id="t8Y-3A-Klx"/>
+                <constraint firstItem="aFa-pk-eqA" firstAttribute="centerX" secondItem="DjD-5q-LPJ" secondAttribute="centerX" id="ubF-fE-7Ra"/>
+                <constraint firstItem="dju-BK-ViY" firstAttribute="centerX" secondItem="DjD-5q-LPJ" secondAttribute="centerX" id="xWz-rJ-r7f"/>
+                <constraint firstItem="OHw-xO-CUN" firstAttribute="centerX" secondItem="DjD-5q-LPJ" secondAttribute="centerX" id="xbj-tu-o2l"/>
+                <constraint firstItem="L29-Gt-zxX" firstAttribute="centerY" secondItem="DjD-5q-LPJ" secondAttribute="centerY" id="xsr-Uo-YiX"/>
+                <constraint firstItem="wYd-bk-wXA" firstAttribute="bottom" secondItem="DjD-5q-LPJ" secondAttribute="bottom" constant="30" id="ylm-ra-ghp"/>
+            </constraints>
+            <connections>
+                <outlet property="dismissButton" destination="DjD-5q-LPJ" id="k9c-gT-FfG"/>
+                <outletCollection property="buttons" destination="Dwz-F5-YW0" collectionClass="NSMutableArray" id="vu6-cK-9uW"/>
+                <outletCollection property="buttons" destination="L29-Gt-zxX" collectionClass="NSMutableArray" id="Z4t-q1-xRP"/>
+                <outletCollection property="buttons" destination="7OB-46-YDV" collectionClass="NSMutableArray" id="zfM-XJ-sYE"/>
+                <outletCollection property="buttons" destination="ZeG-nT-hrc" collectionClass="NSMutableArray" id="dLG-eg-jep"/>
+                <outletCollection property="buttons" destination="4VM-nY-tnS" collectionClass="NSMutableArray" id="zTO-e5-xuy"/>
+                <outletCollection property="labels" destination="OHw-xO-CUN" collectionClass="NSMutableArray" id="6WM-lS-4g6"/>
+                <outletCollection property="labels" destination="aFa-pk-eqA" collectionClass="NSMutableArray" id="eUt-Kk-YRY"/>
+                <outletCollection property="labels" destination="Hl0-30-80F" collectionClass="NSMutableArray" id="mfJ-WT-mYT"/>
+                <outletCollection property="labels" destination="zEK-Lg-cg5" collectionClass="NSMutableArray" id="6Lz-Ip-dLO"/>
+                <outletCollection property="labels" destination="dju-BK-ViY" collectionClass="NSMutableArray" id="zky-zq-Se2"/>
+                <outletCollection property="labelXConstraints" destination="xbj-tu-o2l" collectionClass="NSMutableArray" id="ObH-4a-pQP"/>
+                <outletCollection property="labelXConstraints" destination="ubF-fE-7Ra" collectionClass="NSMutableArray" id="bLb-wC-5gY"/>
+                <outletCollection property="labelXConstraints" destination="f7q-z0-gah" collectionClass="NSMutableArray" id="V25-xT-yoC"/>
+                <outletCollection property="labelXConstraints" destination="BLZ-t3-RzR" collectionClass="NSMutableArray" id="0t6-ve-qwR"/>
+                <outletCollection property="labelXConstraints" destination="xWz-rJ-r7f" collectionClass="NSMutableArray" id="o7w-O0-sP2"/>
+                <outletCollection property="labelYConstraints" destination="WvU-9W-SRB" collectionClass="NSMutableArray" id="OFf-2P-UIN"/>
+                <outletCollection property="labelYConstraints" destination="1e4-hP-iEx" collectionClass="NSMutableArray" id="AKP-1W-iIO"/>
+                <outletCollection property="labelYConstraints" destination="Izd-Yf-JMK" collectionClass="NSMutableArray" id="a0K-1C-7ul"/>
+                <outletCollection property="labelYConstraints" destination="sfq-zO-MSB" collectionClass="NSMutableArray" id="XZ9-Et-NUm"/>
+                <outletCollection property="labelYConstraints" destination="eT7-bM-3Zi" collectionClass="NSMutableArray" id="MgV-Bc-dK3"/>
+                <outletCollection property="buttonXConstraints" destination="WyS-Wl-s7r" collectionClass="NSMutableArray" id="SNT-qb-HbC"/>
+                <outletCollection property="buttonYConstraints" destination="bNd-Vp-Qlj" collectionClass="NSMutableArray" id="NXv-aX-q0B"/>
+                <outletCollection property="buttonXConstraints" destination="dix-U2-XGW" collectionClass="NSMutableArray" id="3pO-Ca-Ip6"/>
+                <outletCollection property="buttonYConstraints" destination="xsr-Uo-YiX" collectionClass="NSMutableArray" id="NJu-2t-ynT"/>
+                <outletCollection property="buttonXConstraints" destination="E1p-2r-YYe" collectionClass="NSMutableArray" id="vfP-ab-gT7"/>
+                <outletCollection property="buttonYConstraints" destination="hAX-mC-4Oc" collectionClass="NSMutableArray" id="90b-4j-USZ"/>
+                <outletCollection property="buttonXConstraints" destination="mQH-e2-yb3" collectionClass="NSMutableArray" id="8kn-FM-fuA"/>
+                <outletCollection property="buttonYConstraints" destination="2Ll-co-R3q" collectionClass="NSMutableArray" id="Rs3-xX-EXx"/>
+                <outletCollection property="buttonXConstraints" destination="23e-jI-x9v" collectionClass="NSMutableArray" id="kVF-aA-x3B"/>
+                <outletCollection property="buttonYConstraints" destination="qiw-VU-w1D" collectionClass="NSMutableArray" id="wRn-wb-U4w"/>
+            </connections>
+            <point key="canvasLocation" x="138" y="42"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+    </resources>
+</document>

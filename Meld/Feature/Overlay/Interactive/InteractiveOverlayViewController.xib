@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InteractiveOverlayViewController" customModule="Meld" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="ZxS-DA-3Jr" id="WWi-05-6Z0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ZxS-DA-3Jr" customClass="InteractiveOverlayView" customModule="Meld" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="isk-tD-vY2">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="udU-XV-Pp7">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <blurEffect style="regular"/>
+                </visualEffectView>
+                <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FTH-ps-6fS" userLabel="Reference">
+                    <rect key="frame" x="171.66666666666666" y="738" width="50" height="50"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="bIU-sz-sUF"/>
+                        <constraint firstAttribute="width" secondItem="FTH-ps-6fS" secondAttribute="height" multiplier="1:1" id="nn7-b5-hpU"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VKy-do-ucV">
+                    <rect key="frame" x="168.66666666666666" y="750" width="56" height="26.333333333333371"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DQt-JB-c4l" userLabel="CircleView1" customClass="CircleView" customModule="Meld" customModuleProvider="target">
+                    <rect key="frame" x="171.66666666666666" y="738" width="50" height="50"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YUn-EF-v4T">
+                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="YUn-EF-v4T" secondAttribute="bottom" id="BsN-wA-1Zt"/>
+                        <constraint firstItem="YUn-EF-v4T" firstAttribute="leading" secondItem="DQt-JB-c4l" secondAttribute="leading" id="W5U-yl-KbY"/>
+                        <constraint firstAttribute="width" secondItem="DQt-JB-c4l" secondAttribute="height" multiplier="1:1" id="YaW-5n-6Fr"/>
+                        <constraint firstItem="YUn-EF-v4T" firstAttribute="top" secondItem="DQt-JB-c4l" secondAttribute="top" id="aou-W8-MrN"/>
+                        <constraint firstAttribute="width" constant="50" id="cfV-YT-ZaA"/>
+                        <constraint firstAttribute="trailing" secondItem="YUn-EF-v4T" secondAttribute="trailing" id="enA-uo-sAT"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="imageView" destination="YUn-EF-v4T" id="Cyy-VV-b5a"/>
+                    </connections>
+                </view>
+                <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wmt-Gt-bCD" userLabel="CircleView2" customClass="CircleView" customModule="Meld" customModuleProvider="target">
+                    <rect key="frame" x="171.66666666666666" y="738" width="50" height="50"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g1z-O4-Av4">
+                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="g1z-O4-Av4" firstAttribute="leading" secondItem="Wmt-Gt-bCD" secondAttribute="leading" id="3Eo-OP-RYu"/>
+                        <constraint firstAttribute="bottom" secondItem="g1z-O4-Av4" secondAttribute="bottom" id="3ID-pD-cNI"/>
+                        <constraint firstAttribute="trailing" secondItem="g1z-O4-Av4" secondAttribute="trailing" id="57M-TN-k7p"/>
+                        <constraint firstItem="g1z-O4-Av4" firstAttribute="top" secondItem="Wmt-Gt-bCD" secondAttribute="top" id="FMO-RM-k3P"/>
+                        <constraint firstAttribute="width" constant="50" id="OWk-7v-dMc"/>
+                        <constraint firstAttribute="width" secondItem="Wmt-Gt-bCD" secondAttribute="height" multiplier="1:1" id="ROI-Ou-0Fr"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="imageView" destination="g1z-O4-Av4" id="FfZ-mS-UZK"/>
+                    </connections>
+                </view>
+                <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2cu-g3-FmP" userLabel="CircleView3" customClass="CircleView" customModule="Meld" customModuleProvider="target">
+                    <rect key="frame" x="171.66666666666666" y="738" width="50" height="50"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Bw-3V-dy5">
+                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="1Bw-3V-dy5" firstAttribute="leading" secondItem="2cu-g3-FmP" secondAttribute="leading" id="HxT-3i-D06"/>
+                        <constraint firstAttribute="width" secondItem="2cu-g3-FmP" secondAttribute="height" multiplier="1:1" id="g45-PY-ihq"/>
+                        <constraint firstAttribute="width" constant="50" id="hnu-3G-rFd"/>
+                        <constraint firstAttribute="bottom" secondItem="1Bw-3V-dy5" secondAttribute="bottom" id="qQD-t1-Ih4"/>
+                        <constraint firstItem="1Bw-3V-dy5" firstAttribute="top" secondItem="2cu-g3-FmP" secondAttribute="top" id="sm6-s4-sdy"/>
+                        <constraint firstAttribute="trailing" secondItem="1Bw-3V-dy5" secondAttribute="trailing" id="zAj-Vs-oBz"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="imageView" destination="1Bw-3V-dy5" id="cDr-oh-foO"/>
+                    </connections>
+                </view>
+                <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uu7-qX-mxV" userLabel="CircleView4" customClass="CircleView" customModule="Meld" customModuleProvider="target">
+                    <rect key="frame" x="171.66666666666666" y="738" width="50" height="50"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gF1-ye-hQM">
+                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Uu7-qX-mxV" secondAttribute="height" multiplier="1:1" id="2JW-9E-7Sh"/>
+                        <constraint firstItem="gF1-ye-hQM" firstAttribute="leading" secondItem="Uu7-qX-mxV" secondAttribute="leading" id="5bn-Ud-MU2"/>
+                        <constraint firstItem="gF1-ye-hQM" firstAttribute="top" secondItem="Uu7-qX-mxV" secondAttribute="top" id="7sc-JR-4fj"/>
+                        <constraint firstAttribute="width" constant="50" id="JfQ-JY-jZN"/>
+                        <constraint firstAttribute="bottom" secondItem="gF1-ye-hQM" secondAttribute="bottom" id="SYf-eQ-naT"/>
+                        <constraint firstAttribute="trailing" secondItem="gF1-ye-hQM" secondAttribute="trailing" id="si3-bw-XR5"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="imageView" destination="gF1-ye-hQM" id="0Ei-Wt-MYD"/>
+                    </connections>
+                </view>
+                <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t5z-Bf-Mjo" userLabel="CircleView5" customClass="CircleView" customModule="Meld" customModuleProvider="target">
+                    <rect key="frame" x="171.66666666666666" y="738" width="50" height="50"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nkc-8p-QhI">
+                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="nkc-8p-QhI" secondAttribute="bottom" id="0sT-Qb-bhe"/>
+                        <constraint firstAttribute="trailing" secondItem="nkc-8p-QhI" secondAttribute="trailing" id="8dC-yZ-ZJg"/>
+                        <constraint firstAttribute="width" constant="50" id="Hep-3B-x4w"/>
+                        <constraint firstAttribute="width" secondItem="t5z-Bf-Mjo" secondAttribute="height" multiplier="1:1" id="JfN-zo-8Zo"/>
+                        <constraint firstItem="nkc-8p-QhI" firstAttribute="top" secondItem="t5z-Bf-Mjo" secondAttribute="top" id="U8d-73-WnU"/>
+                        <constraint firstItem="nkc-8p-QhI" firstAttribute="leading" secondItem="t5z-Bf-Mjo" secondAttribute="leading" id="pk5-dN-HYJ"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="imageView" destination="nkc-8p-QhI" id="6ks-JM-Qj7"/>
+                    </connections>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="gNm-kC-6Yt"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="FTH-ps-6fS" firstAttribute="centerX" secondItem="gNm-kC-6Yt" secondAttribute="centerX" id="50n-QG-66b"/>
+                <constraint firstAttribute="trailing" secondItem="isk-tD-vY2" secondAttribute="trailing" id="840-SI-NhZ"/>
+                <constraint firstAttribute="bottom" secondItem="isk-tD-vY2" secondAttribute="bottom" id="HVY-fP-ucx"/>
+                <constraint firstItem="t5z-Bf-Mjo" firstAttribute="centerY" secondItem="FTH-ps-6fS" secondAttribute="centerY" id="Hgc-iL-GCp"/>
+                <constraint firstItem="VKy-do-ucV" firstAttribute="centerY" secondItem="FTH-ps-6fS" secondAttribute="centerY" id="J5h-VZ-1Ry"/>
+                <constraint firstItem="VKy-do-ucV" firstAttribute="centerX" secondItem="gNm-kC-6Yt" secondAttribute="centerX" id="QR5-Tc-YfN"/>
+                <constraint firstItem="isk-tD-vY2" firstAttribute="top" secondItem="ZxS-DA-3Jr" secondAttribute="top" id="XF0-P6-yWy"/>
+                <constraint firstItem="DQt-JB-c4l" firstAttribute="centerY" secondItem="FTH-ps-6fS" secondAttribute="centerY" id="ZNK-I7-xs4"/>
+                <constraint firstItem="DQt-JB-c4l" firstAttribute="centerX" secondItem="FTH-ps-6fS" secondAttribute="centerX" id="aKj-Bh-ytF"/>
+                <constraint firstItem="Uu7-qX-mxV" firstAttribute="centerY" secondItem="FTH-ps-6fS" secondAttribute="centerY" id="bYf-8r-bb1"/>
+                <constraint firstItem="2cu-g3-FmP" firstAttribute="centerX" secondItem="FTH-ps-6fS" secondAttribute="centerX" id="cid-M0-dZO"/>
+                <constraint firstItem="gNm-kC-6Yt" firstAttribute="bottom" secondItem="FTH-ps-6fS" secondAttribute="bottom" constant="30" id="dcd-eC-UJc"/>
+                <constraint firstItem="Wmt-Gt-bCD" firstAttribute="centerX" secondItem="FTH-ps-6fS" secondAttribute="centerX" id="fV7-md-UrR"/>
+                <constraint firstItem="Uu7-qX-mxV" firstAttribute="centerX" secondItem="FTH-ps-6fS" secondAttribute="centerX" id="gyJ-ZK-3g6"/>
+                <constraint firstItem="t5z-Bf-Mjo" firstAttribute="centerX" secondItem="FTH-ps-6fS" secondAttribute="centerX" id="jG8-QQ-TmN"/>
+                <constraint firstItem="2cu-g3-FmP" firstAttribute="centerY" secondItem="FTH-ps-6fS" secondAttribute="centerY" id="wat-3z-2Cf"/>
+                <constraint firstItem="Wmt-Gt-bCD" firstAttribute="centerY" secondItem="FTH-ps-6fS" secondAttribute="centerY" id="yzJ-6c-Iuo"/>
+                <constraint firstItem="isk-tD-vY2" firstAttribute="leading" secondItem="ZxS-DA-3Jr" secondAttribute="leading" id="zhs-mm-idL"/>
+            </constraints>
+            <connections>
+                <outlet property="label" destination="VKy-do-ucV" id="GKM-fJ-U9w"/>
+                <outlet property="labelYConstraint" destination="J5h-VZ-1Ry" id="681-Ix-4j5"/>
+                <outletCollection property="buttons" destination="DQt-JB-c4l" collectionClass="NSMutableArray" id="0Nq-2s-Cns"/>
+                <outletCollection property="buttons" destination="Wmt-Gt-bCD" collectionClass="NSMutableArray" id="F3g-Db-RKs"/>
+                <outletCollection property="buttons" destination="2cu-g3-FmP" collectionClass="NSMutableArray" id="4NJ-C2-9CO"/>
+                <outletCollection property="buttons" destination="Uu7-qX-mxV" collectionClass="NSMutableArray" id="hT4-lv-zHi"/>
+                <outletCollection property="buttons" destination="t5z-Bf-Mjo" collectionClass="NSMutableArray" id="SOc-nZ-4Vj"/>
+                <outletCollection property="buttonXConstraints" destination="aKj-Bh-ytF" collectionClass="NSMutableArray" id="jcr-IM-7SY"/>
+                <outletCollection property="buttonYConstraints" destination="ZNK-I7-xs4" collectionClass="NSMutableArray" id="rXP-tB-R2v"/>
+                <outletCollection property="buttonXConstraints" destination="fV7-md-UrR" collectionClass="NSMutableArray" id="TRD-zG-Dv3"/>
+                <outletCollection property="buttonYConstraints" destination="yzJ-6c-Iuo" collectionClass="NSMutableArray" id="gik-Lj-miN"/>
+                <outletCollection property="buttonXConstraints" destination="cid-M0-dZO" collectionClass="NSMutableArray" id="KIX-L8-0GO"/>
+                <outletCollection property="buttonYConstraints" destination="wat-3z-2Cf" collectionClass="NSMutableArray" id="950-ik-7rV"/>
+                <outletCollection property="buttonXConstraints" destination="gyJ-ZK-3g6" collectionClass="NSMutableArray" id="Rzh-so-0Rp"/>
+                <outletCollection property="buttonYConstraints" destination="bYf-8r-bb1" collectionClass="NSMutableArray" id="xdo-Bf-X4e"/>
+                <outletCollection property="buttonXConstraints" destination="jG8-QQ-TmN" collectionClass="NSMutableArray" id="KKO-0n-mkr"/>
+                <outletCollection property="buttonYConstraints" destination="Hgc-iL-GCp" collectionClass="NSMutableArray" id="a4O-qC-6ax"/>
+            </connections>
+            <point key="canvasLocation" x="138" y="42"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
